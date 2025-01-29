@@ -43,6 +43,4 @@ return {
     {
         "tami5/lspsaga.nvim"
     },
-    {
-            }
 }

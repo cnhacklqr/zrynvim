@@ -14,7 +14,7 @@ vim.opt.shiftwidth = 4 -- insert 4 spaces on a tab
 vim.opt.expandtab = true -- tabs are spaces, mainly because of python
 
 -- UI config
-vim.opt.guifont = "ZedMono Nerd Font:h14" -- Set Font
+vim.opt.guifont = "Maple Mono SC NF:h12" -- Set Font
 vim.opt.number = true -- show absolute number
 vim.opt.relativenumber = true -- add numbers to each line on the left side
 vim.opt.cursorline = true -- highlight cursor line underneath the cursor horizontally
