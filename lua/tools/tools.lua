@@ -4,7 +4,6 @@
 
 require("tools.config.whichkey")
 require("tools.config.nvim-tree")
-require("tools.config.multicursors")
 require("tools.config.telescope")
 require("tools.config.floatterm")
 require("tools.config.fine-cmdline")

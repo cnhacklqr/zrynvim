@@ -37,9 +37,6 @@ return {
         "numToStr/FTerm.nvim",
     },
     {
-        'viocost/viedit',
-    },
-    {
         'VonHeikemen/searchbox.nvim',
         dependencies = {
             'MunifTanjim/nui.nvim'
@@ -77,6 +74,21 @@ return {
             "MunifTanjim/nui.nvim",          -- To build the plugin UI
             "nvim-telescope/telescope.nvim", -- For picking b/w different remote methods
         },
-        config=true
-    }
+        config = true
+    },
+    {
+        "brenton-leighton/multiple-cursors.nvim",
+        version = "*", -- Use the latest tagged version
+        opts = {},     -- This causes the plugin setup function to be called
+        keys = {
+            { "<C-j>",         "<Cmd>MultipleCursorsAddDown<CR>",        mode = { "n", "x" },      desc = "Add cursor and move down" },
+            { "<C-k>",         "<Cmd>MultipleCursorsAddUp<CR>",          mode = { "n", "x" },      desc = "Add cursor and move up" },
+
+            { "<C-Up>",        "<Cmd>MultipleCursorsAddUp<CR>",          mode = { "n", "i", "x" }, desc = "Add cursor and move up" },
+            { "<C-Down>",      "<Cmd>MultipleCursorsAddDown<CR>",        mode = { "n", "i", "x" }, desc = "Add cursor and move down" },
+
+            { "<C-LeftMouse>", "<Cmd>MultipleCursorsMouseAddDelete<CR>", mode = { "n", "i" },      desc = "Add or remove cursor" },
+
+        },
+    },
 }
